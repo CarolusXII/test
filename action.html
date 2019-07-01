@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Action</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/action.css">
+</head>
+<body>
+	<div id="modal-window" class="modal-window">
+		<div class="window">
+			<div class="container d-flex flex-column justify-content-around align-items-stretch">
+				<div class="window__top-content d-flex justify-content-between align-items-center">
+					<p>Создание нового пользователя</p>
+					<div id="window__close" class="window__close">&#10006;</div>
+				</div>
+				<form onsubmit="newUser();" autocomplete="off" class="d-flex flex-column justify-content-around align-items-stretch">
+					<input id="user-login" type="text" name="user-login" placeholder="Введите логин пользователя">
+					<input id="user-password" type="password" name="user-password" placeholder="Введите пароль пользователя">
+					<input id="user-name" type="text" name="user-name" placeholder="Введите имя пользователя">
+					<input id="user-role" type="user-role" name="user-role" placeholder="Введите роль пользователя">
+					<input id="user-phone" type="tel" name="user-phone" placeholder="Введите телефон пользователя">
+					<input id="first-time" type="time" name="first-time" placeholder="Введите время начала работы">
+					<input id="second-time" type="time" name="second-time" placeholder="Введите время окончания работы">
+					<input id="submit" class="submit" type="submit" name="submit" value="Создать пользователя">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="edit-user" class="edit-user">
+		<div class="modal-edit-user">
+			<div class="container d-flex flex-column justify-content-around align-items-stretch">
+				<div class="edit-user__top-content d-flex flex-row justify-content-between align-items-center">
+					<p>Изменение параметров пользователя: </p><p id="modal-edit-user__name"></p>
+					<div id="modal-edit__close" class="modal-edit__close">&#10006;</div>
+				</div>
+				<form id="form-edit-user" onsubmit="editLocalStorage();" autocomplete="off" class="d-flex flex-column justify-content-around align-items-stretch">
+					
+					<input id="new-user-role" type="user-role" name="new-user-role">
+					<input id="new-user-phone" type="tel" name="new-user-phone">
+					<input id="new-first-time" type="time" name="new-first-time">
+					<input id="new-second-time" type="time" name="new-second-time">
+					<input id="submit" class="submit" type="submit" name="submit">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<header id="header" class="d-flex flex-row align-items-end">
+		<div class="container">
+			<div id="header-nav" class="row justify-content-between align-items-end">
+				<div class="menu">
+					<a href="action.html">Действие</a>
+					<a href="rights.html">Права</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main id="main">
+		<div class="container">
+			<div id="table-with-users" class="d-flex flex-column justify-content-around align-items-stretch table-with-users">
+				<!--тут вставочки инфы о юзерах-->
+			</div>
+		</div>
+	</main>
+	
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/localStorage.js"></script>
+	<script type="text/javascript" src="js/tel-mask.js"></script>
+	<script type="text/javascript" src="js/new-user.js"></script>
+	<script type="text/javascript" src="js/tel-mask.js"></script>
+	<script type="text/javascript" src="js/edit-user.js"></script>
+</body>
+</html>

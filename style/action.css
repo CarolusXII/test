@@ -1,0 +1,172 @@
+.blur {
+  filter: blur(3px); }
+
+body {
+  position: relative; }
+  body .modal-window {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    z-index: 101; }
+    body .modal-window .window {
+      border: solid 1px #f2f2f2;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin: 10vh 0;
+      height: 80vh;
+      box-shadow: 0px 0px 5px 5px #fafafa; }
+      body .modal-window .window .container {
+        height: 100%;
+        width: 100%;
+        padding: 30px 20px; }
+        @media (min-width: 768px) {
+          body .modal-window .window .container {
+            padding: 30px 15%; } }
+        body .modal-window .window .container .window__top-content p {
+          font-size: 20px;
+          width: 100%; }
+          @media (max-width: 425px) {
+            body .modal-window .window .container .window__top-content p {
+              font-size: 15px; } }
+        body .modal-window .window .container .window__top-content .window__close {
+          color: #000;
+          padding: 10px;
+          cursor: pointer; }
+        body .modal-window .window .container form {
+          height: 90%; }
+          body .modal-window .window .container form input {
+            background-color: #f2f2f2;
+            outline: none;
+            border: none;
+            border-bottom: solid 2px #ccc;
+            height: 40px;
+            padding-left: 10px; }
+          body .modal-window .window .container form input:not(:last-child):focus {
+            border-bottom: solid 2px #fcc917; }
+          body .modal-window .window .container form .submit {
+            background-color: #ccc;
+            outline: none;
+            border: solid 1px #ccc;
+            height: 40px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold; }
+            @media (max-width: 425px) {
+              body .modal-window .window .container form .submit {
+                font-size: 12px; } }
+          body .modal-window .window .container form .submit:active {
+            background-color: #fcc917; }
+  body .edit-user {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 101;
+    display: none; }
+    body .edit-user .modal-edit-user {
+      border: solid 1px #f2f2f2;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin: 10vh 0;
+      height: 80vh;
+      box-shadow: 0px 0px 5px 5px #fafafa; }
+      body .edit-user .modal-edit-user .container {
+        height: 100%;
+        width: 100%;
+        padding: 30px 20px; }
+        @media (min-width: 768px) {
+          body .edit-user .modal-edit-user .container {
+            padding: 30px 15%; } }
+        body .edit-user .modal-edit-user .container .edit-user__top-content p {
+          font-size: 20px;
+          width: 100%; }
+          @media (max-width: 425px) {
+            body .edit-user .modal-edit-user .container .edit-user__top-content p {
+              font-size: 15px; } }
+        body .edit-user .modal-edit-user .container .edit-user__top-content p:nth-child(1) {
+          font-size: 16px; }
+        body .edit-user .modal-edit-user .container .edit-user__top-content .modal-edit__close {
+          color: #000;
+          padding: 10px;
+          cursor: pointer; }
+        body .edit-user .modal-edit-user .container form {
+          height: 90%; }
+          body .edit-user .modal-edit-user .container form input {
+            background-color: #f2f2f2;
+            outline: none;
+            border: none;
+            border-bottom: solid 2px #ccc;
+            height: 40px;
+            padding-left: 10px; }
+          body .edit-user .modal-edit-user .container form input:not(:last-child):focus {
+            border-bottom: solid 2px #fcc917; }
+          body .edit-user .modal-edit-user .container form .submit {
+            background-color: #ccc;
+            outline: none;
+            border: solid 1px #ccc;
+            height: 40px;
+            border-radius: 5px;
+            color: #000;
+            font-weight: bold; }
+            @media (max-width: 425px) {
+              body .edit-user .modal-edit-user .container form .submit {
+                font-size: 12px; } }
+          body .edit-user .modal-edit-user .container form .submit:active {
+            background-color: #fcc917; }
+  body .show-block {
+    display: block; }
+  body header {
+    height: 80px;
+    border-bottom: solid 1px #ebeef1;
+    z-index: 100;
+    margin-bottom: 20px; }
+    body header .container .row .menu {
+      position: relative;
+      width: 60%;
+      margin-bottom: 4.5px; }
+      body header .container .row .menu a {
+        font-size: 17px;
+        color: #c7c7c7;
+        text-decoration: none;
+        padding: 5px; }
+      body header .container .row .menu a:last-child:hover {
+        border-bottom: solid 3px #fff2c4; }
+      body header .container .row .menu a:first-child {
+        margin-right: 20%;
+        font-weight: bold;
+        color: #000;
+        border-bottom: solid 3px #fcc917; }
+    body header .container .row .new-user {
+      height: 40px;
+      width: 40px;
+      cursor: pointer; }
+  body main .container .table-with-users .table-with-users__row {
+    margin: 10px 0; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__cell {
+      width: 5.75%; }
+      @media (max-width: 768px) {
+        body main .container .table-with-users .table-with-users__row .table-with-users__cell {
+          font-size: 12px; } }
+    body main .container .table-with-users .table-with-users__row .table-with-users__cell:nth-child(1) {
+      width: 20%; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__cell:nth-child(2) {
+      width: 20%; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__cell:nth-child(3) {
+      width: 20%; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__edit {
+      height: 16px;
+      width: 16px;
+      background-image: url(../img/edit.png);
+      padding: 5px;
+      margin-right: -20px; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__edit:hover {
+      cursor: pointer; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__remove {
+      height: 16px;
+      width: 16px;
+      background-image: url(../img/delete.png);
+      padding: 5px; }
+    body main .container .table-with-users .table-with-users__row .table-with-users__remove:hover {
+      cursor: pointer; }
+
+/*# sourceMappingURL=action.css.map */

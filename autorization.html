@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autorization</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style/autorization.css">
+</head>
+<body>
+	<main class="d-flex flex-row justify-content-center align-items-center">
+		<form autocomplete="off" onsubmit="event.preventDefault(); authorize();" class="modal-window col-12 col-sm-8 col-md-6 col-xl-4 d-flex flex-column align-items-stretch justify-content-around">
+			<input id="enter-login" type="text" name="login" placeholder="Логин">
+			<input id="enter-password" type="password" name="password" placeholder="Пароль">
+			<input id="button-for-aut" type="submit" name="button-for-aut">
+		</form>
+	</main>
+
+	<script type="text/javascript" src="js/localStorage.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+.blur {
+	filter: blur(3px);
+}
+
+body {
+	
+	.modal-window-edit-right-user {
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		display: none;
+		z-index: 101;
+
+		.window-edit-right-user {
+			border: solid 1px #f2f2f2;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			margin: 20vh 0;
+			height: 60vh;
+			box-shadow: 0px 0px 5px 5px #fafafa;
+
+			.container {
+				height: 100%;
+				width: 100%;
+				padding: 30px 20px;
+				@media (min-width: 768px) {
+					padding: 30px 15%;
+				}
+
+				.window__top-content {
+					p {
+						font-size: 20px;
+						width: 100%;
+						@media(max-width: 425px) {
+							font-size: 15px;
+						}
+					}
+
+					p:nth-child(1) {
+						font-size: 16px;
+						width: 80%;
+					}
+
+					.modal-window-edit-right-user__close {
+						padding: 10px;
+						cursor: pointer;
+					}
+				}
+
+				form {
+					height: 90%;
+
+					input {
+						background-color: #f2f2f2;
+						outline: none;
+						border: none;
+						border-bottom: solid 2px #ccc;
+						height: 40px;
+						padding-left: 10px;
+					}
+
+					input:not(:last-child):focus {
+						border-bottom: solid 2px #fcc917;
+					}
+
+					.edit-right {
+						height: 40px;
+						outline: none;
+						background-color: #f2f2f2;
+						border: none;
+						color: #858585;
+						padding-left: 5px;
+						border-bottom: solid 2px #ccc;
+					}
+
+					.edit-right:not(:last-child):focus {
+						border-bottom: solid 2px #fcc917;
+					}
+
+					.submit {
+						background-color: #ccc;
+						outline: none;
+						border: solid 1px #ccc;
+						height: 40px;
+						border-radius: 5px;
+						color: #000;
+						font-weight: bold;
+						@media (max-width: 425px) {
+							font-size: 12px;
+						}
+
+						.submit:active {
+							background-color: #fcc917;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.show-block {
+		display: block;
+	}
+
+	.modal-window {
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		display: none;
+		z-index: 101;
+		
+		.window {
+			border: solid 1px #f2f2f2;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			margin: 10vh 0;
+			height: 80vh;
+			box-shadow: 0px 0px 5px 5px #fafafa;
+
+			.container {
+				height: 100%;
+				width: 100%;
+				padding: 30px 20px;
+				@media (min-width: 768px) {
+					padding: 30px 15%;
+				}
+
+				.window__top-content {
+
+					p {
+						font-size: 20px;
+						width: 100%;
+						@media(max-width: 425px) {
+							font-size: 15px;
+						}
+					}
+
+					.window__close {
+						color: #000;
+						padding: 10px;
+						cursor: pointer;
+					}
+				}
+
+				form {
+					height: 90%;
+
+					input {
+						background-color: #f2f2f2;
+						outline: none;
+						border: none;
+						border-bottom: solid 2px #ccc;
+						height: 40px;
+						padding-left: 10px;
+					}
+
+					input:not(:last-child):focus {
+						border-bottom: solid 2px #fcc917;
+					}
+
+					.submit {
+						background-color: #ccc;
+						outline: none;
+						border: solid 1px #ccc;
+						height: 40px;
+						border-radius: 5px;
+						color: #000;
+						font-weight: bold;
+						@media (max-width: 425px) {
+							font-size: 12px;
+						}
+					}
+
+					.submit:active {
+						background-color: #fcc917;
+					}
+				}
+			}
+		}
+	}
+
+	.show-block {
+		display: block;
+	}
+
+	header {
+		height: 80px;
+		border-bottom: solid 1px #ebeef1;
+		z-index: 100;
+		
+		.container {
+
+			.row {
+
+				.menu {
+					position: relative;
+					width: 60%;
+					margin-bottom: 4.5px;
+
+					a {
+						font-size: 17px;
+						color: #c7c7c7;
+						text-decoration: none;
+						padding: 5px;
+					}
+
+					a:first-child:hover {
+						border-bottom: solid 3px #fff2c4;
+					}
+
+					a:last-child {
+						margin-left: 20%;
+						font-weight: bold;
+						color: #000;
+						border-bottom: solid 3px #fcc917;
+					}
+				}
+
+				.new-user {
+					height: 40px;
+					width: 40px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+main {
+
+	.container {
+
+		.table-for-edit-rights {
+			height: 20vh;
+			overflow: auto;
+			margin-top: 20px;
+			
+			.table-for-edit-rights__row {
+				width: 100%;
+				margin: 10px 0;
+
+				.table-for-edit-rights__cell:nth-child(1) {
+					width: 20%;
+				}
+
+				.table-for-edit-rights__cell:nth-child(2) {
+					width: 20%;
+				}
+
+				.table-for-edit-rights__cell:nth-child(3) {
+					width: 20%;
+				}
+
+				.table-for-edit-rights__cell:nth-child(4) {
+					width: 20%;
+				}
+
+				.table-for-edit-rights__edit {
+					background-image: url(../img/edit.png);
+					height: 16px;
+					width: 16px;
+					padding: 5px;
+				}
+
+				.table-for-edit-rights__edit:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.main__info-about-rights {
+			border-left: solid 3px #fcc917;
+			padding-left: 20px;
+
+			h1 {
+				font-size: 25px;
+			} 
+
+			p {
+				font-size: 15px;
+
+				span {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

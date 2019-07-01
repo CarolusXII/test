@@ -1,0 +1,267 @@
+.blur {
+	filter: blur(3px);
+}
+
+body {
+	position: relative;
+
+	.modal-window {
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		display: none;
+		z-index: 101;
+		
+		.window {
+			border: solid 1px #f2f2f2;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			margin: 10vh 0;
+			height: 80vh;
+			box-shadow: 0px 0px 5px 5px #fafafa;
+
+			.container {
+				height: 100%;
+				width: 100%;
+				padding: 30px 20px;
+				@media (min-width: 768px) {
+					padding: 30px 15%;
+				}
+
+				.window__top-content {
+
+					p {
+						font-size: 20px;
+						width: 100%;
+						@media(max-width: 425px) {
+							font-size: 15px;
+						}
+					}
+
+					.window__close {
+						color: #000;
+						padding: 10px;
+						cursor: pointer;
+					}
+				}
+
+				form {
+					height: 90%;
+
+					input {
+						background-color: #f2f2f2;
+						outline: none;
+						border: none;
+						border-bottom: solid 2px #ccc;
+						height: 40px;
+						padding-left: 10px;
+					}
+
+					input:not(:last-child):focus {
+						border-bottom: solid 2px #fcc917;
+					}
+
+					.submit {
+						background-color: #ccc;
+						outline: none;
+						border: solid 1px #ccc;
+						height: 40px;
+						border-radius: 5px;
+						color: #000;
+						font-weight: bold;
+						@media (max-width: 425px) {
+							font-size: 12px;
+						}
+					}
+
+					.submit:active {
+						background-color: #fcc917;
+					}
+				}
+			}
+		}
+	}
+
+	.edit-user {
+		position: absolute;
+		height: 100vh;
+		width: 100%;	
+		z-index: 101;
+		display: none;
+
+		.modal-edit-user {
+			border: solid 1px #f2f2f2;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			margin: 10vh 0;
+			height: 80vh;
+			box-shadow: 0px 0px 5px 5px #fafafa;
+
+			.container {
+				height: 100%;
+				width: 100%;
+				padding: 30px 20px;
+				@media (min-width: 768px) {
+					padding: 30px 15%;
+				}
+				
+
+				.edit-user__top-content {
+					
+					p {
+						font-size: 20px;
+						width: 100%;
+						@media(max-width: 425px) {
+							font-size: 15px;
+						}
+					}
+
+					p:nth-child(1) {
+						font-size: 16px;
+					}
+
+					.modal-edit__close {
+						color: #000;
+						padding: 10px;
+						cursor: pointer;
+					}
+				}
+
+				form {
+					height: 90%;
+
+					input {
+						background-color: #f2f2f2;
+						outline: none;
+						border: none;
+						border-bottom: solid 2px #ccc;
+						height: 40px;
+						padding-left: 10px;
+					}
+
+					input:not(:last-child):focus {
+						border-bottom: solid 2px #fcc917;
+					}
+
+					.submit {
+						background-color: #ccc;
+						outline: none;
+						border: solid 1px #ccc;
+						height: 40px;
+						border-radius: 5px;
+						color: #000;
+						font-weight: bold;
+						@media (max-width: 425px) {
+							font-size: 12px;
+						}
+					}
+
+					.submit:active {
+						background-color: #fcc917;
+					}
+				}
+			}
+		}
+	}
+
+	.show-block {
+		display: block;
+	}
+
+	header {
+		height: 80px;
+		border-bottom: solid 1px #ebeef1;
+		z-index: 100;
+		margin-bottom: 20px;
+		
+		.container {
+
+			.row {
+
+				.menu {
+					position: relative;
+					width: 60%;
+					margin-bottom: 4.5px;
+
+					a {
+						font-size: 17px;
+						color: #c7c7c7;
+						text-decoration: none;
+						padding: 5px;
+					}
+
+					a:last-child:hover {
+						border-bottom: solid 3px #fff2c4;
+					}
+
+					a:first-child {
+						margin-right: 20%;
+						font-weight: bold;
+						color: #000;
+						border-bottom: solid 3px #fcc917;
+					}
+				}
+
+				.new-user {
+					height: 40px;
+					width: 40px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	main {
+		
+		.container {
+			
+			.table-with-users {
+
+				.table-with-users__row {
+					margin: 10px 0;
+
+					.table-with-users__cell {
+						width: 5.75%;
+						@media (max-width: 768px) {
+							font-size: 12px;
+						}
+					}
+					
+					.table-with-users__cell:nth-child(1) {
+						width: 20%;
+					}
+					
+					.table-with-users__cell:nth-child(2) {
+						width: 20%;
+					}
+
+					.table-with-users__cell:nth-child(3) {
+						width: 20%;
+					}
+
+					.table-with-users__edit {
+						height: 16px;
+						width: 16px;
+						background-image: url(../img/edit.png);
+						padding: 5px;
+						margin-right: -20px;
+					}
+					
+					.table-with-users__edit:hover {
+						cursor: pointer; 
+					}
+
+					.table-with-users__remove {
+						height: 16px;
+						width: 16px;
+						background-image: url(../img/delete.png);
+						padding: 5px;
+					}
+					.table-with-users__remove:hover {
+						cursor: pointer; 
+					}
+				}
+			}
+		}
+	}
+}
